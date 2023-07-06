@@ -79,7 +79,7 @@ main {
     margin-bottom: 3rem;
 }
 
-.btn-check {
+.btn {
     border: none;
     background-color: #fff;
     color: #000;
@@ -89,7 +89,7 @@ main {
     cursor: pointer;
 }
 
-.btn-check:hover {
+.btn:hover {
     background-color: rgb(218, 213, 213);
 }
 
