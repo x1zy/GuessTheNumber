@@ -1,7 +1,7 @@
 'use strict';
 
 const randomNumber = Math.trunc(Math.random() * 10) + 1;
-let points = 0;
+let points = 10;
 
 document.querySelector('.check').addEventListener
 ('click', function () {
@@ -19,9 +19,6 @@ document.querySelector('.check').addEventListener
 
         document.querySelector('.guess-message').
         textContent = 'Right!';
-        document.querySelector('.question').textContent = randomNumber;
-        document.querySelector('body').style.backgroundColor = '#00FF00';
-        document.querySelector('.question').style.width = '50rem';
         points++;
         document.querySelector('.score').textContent = points;
 
