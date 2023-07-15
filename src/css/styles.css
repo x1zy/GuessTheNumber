@@ -1,5 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url("../libs/normalize.css");
+@media screen and (max-width: 993px) {
+    main {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .left {
+        order: 1;
+    }
+
+    .right {
+        order: 2;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20rem;
+        margin-bottom: 5rem ;
+    }
+}
+
+/* Reset arrow styles in input[type=number] */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
 
 body {
     font-family: 'Press Start 2P', sans-serif;
@@ -13,20 +44,18 @@ header {
 }
 
 main {
-    height: 65vh;
+    height: 60vh;
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
-
 
 .left {
     width: 50rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 2rem;
 }
 
 .right {
@@ -107,18 +136,16 @@ main {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
-    left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.99);
 }
 
 .modal-content {
     background-color: #000;
     max-width: 400px;
-    margin: 200px auto;
+    margin: 400px auto;
     padding: 20px;
     text-align: center;
 }
@@ -128,9 +155,10 @@ main {
 }
 
 .modal-replay {
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
-    border: none;
     cursor: pointer;
+}
+
+.again {
+    width: 32px;
+    height: 32px;
 }

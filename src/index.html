@@ -18,22 +18,24 @@
       </div>
     </header>
     <main>
-      <section class="left">
-        <input type="number" class="number-input">
-        <button class="btn check">Check!</button>
-      </section>
-      <section class="right">
-        <p class="guess-message">Start guessing!</p>
-        <p class="label-score">Points: <span class="score">0</span></p>
-        <p class="label-highscore">Best results: <span class="highscore">0</span></p>
-      </section>
+        <section class="left">
+          <input type="number" class="number-input">
+          <button class="btn check">Check!</button>
+        </section>
+        <section class="right">
+          <p class="guess-message">Start guessing!</p>
+          <p class="label-score">Points: <span class="score">0</span></p>
+          <p class="label-highscore">Best result: <span class="highscore">0</span></p>
+        </section>
     </main>
     <div class="modal">
       <div class="modal-content">
         <h2 class="modal-title">Game Over!</h2>
-        <p>Your Score: <span class="modal-score">0</span></p>
-        <p>Best Score: <span class="modal-highscore">0</span></p>
-        <button class="modal-replay">Play Again</button>
+        <p>Your score: <span class="modal-score">0</span></p>
+        <p>Best result: <span class="modal-highscore">0</span></p>
+        <button class="modal-replay">
+          <img src="assets/icons/repeat.svg" class="again" alt="repeat">
+        </button>
       </div>
     </div>
     <script src="js/script.js"></script>
