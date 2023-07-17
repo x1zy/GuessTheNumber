@@ -18,6 +18,27 @@
         margin-top: 20rem;
         margin-bottom: 5rem ;
     }
+
+    .left, .right {
+        max-width: 80vw;
+    }
+
+}
+
+@media screen and (max-width: 815px) {
+
+    .between {
+        margin-top: 60px;
+    }
+
+    .heart {
+        margin-top: 70px;
+    }
+
+    .left,
+    .right {
+        max-width: 90vw;
+    }
 }
 
 /* Reset arrow styles in input[type=number] */
