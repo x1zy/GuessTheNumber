@@ -58,6 +58,10 @@ document.querySelector('.check').addEventListener('click', function() {
             highscore = points;
             document.querySelector('.highscore').textContent = highscore;
         }
+
+        // Generate a new random number after successful guess
+        randomNumber = Math.trunc(Math.random() * 10) + 1;
+
         return;
     }
 
