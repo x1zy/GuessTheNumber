@@ -1,43 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url("../libs/normalize.css");
+
 @media screen and (max-width: 993px) {
     main {
         flex-direction: column-reverse;
-        height: auto;
+        margin-top: 8rem;
     }
 
     .left {
         order: 1;
+        margin-top: 5rem;
     }
 
     .right {
         order: 2;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 20rem;
-        margin-bottom: 5rem ;
-    }
-
-    .left, .right {
-        max-width: 80vw;
-    }
-
-}
-
-@media screen and (max-width: 815px) {
-
-    .between {
-        margin-top: 60px;
-    }
-
-    .heart {
-        margin-top: 70px;
-    }
-
-    .left,
-    .right {
-        max-width: 90vw;
     }
 }
 
@@ -60,12 +40,16 @@ body {
 }
 
 header {
-    position: relative;
-    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 main {
-    height: 60vh;
+    height: 45vh;
     color: #fff;
     display: flex;
     align-items: center;
@@ -73,44 +57,35 @@ main {
 }
 
 .left {
-    width: 50rem;
+    width: 100%;
+    max-width: 50rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .right {
-    width: 50rem;
+    width: 100%;
+    max-width: 50rem;
     font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title {
     font-size: 3rem;
     text-align: center;
-    position: absolute;
-    width: 100%;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .between {
     text-align: center;
-    position: absolute;
-    width: 100%;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .hearts {
     font-size: 4rem;
-    width: 25rem;
     text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 50%);
+    margin-top: 5rem;
 }
 
 .heart {
