@@ -9,7 +9,6 @@ let life = 3;
 function removeLastHeart() {
     const hearts = document.querySelectorAll('.hearts img.heart');
     const lastHeart = hearts[hearts.length - 1];
-
     if (lastHeart) {
         lastHeart.parentNode.removeChild(lastHeart);
     }
@@ -19,10 +18,9 @@ function showGameOverModal() {
     const modal = document.querySelector('.modal');
     const modalScore = document.querySelector('.modal-score');
     const modalHighscore = document.querySelector('.modal-highscore');
-
     modalScore.textContent = points;
     modalHighscore.textContent = highscore;
-    modal.style.display = 'block';
+    modal.style.display = 'flex';
 }
 
 function resetGame() {
