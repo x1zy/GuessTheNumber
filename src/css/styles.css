@@ -21,6 +21,26 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .number-input {
+        width: 10rem;
+    }
+
+    .hearts {
+        font-size: 2rem !important;
+    }
+
+    .right {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .title {
+        font-size: 2.5rem !important;
+    }
+}
+
 /* Reset arrow styles in input[type=number] */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
