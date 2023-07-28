@@ -20,7 +20,7 @@ function showGameOverModal() {
     const modalHighscore = document.querySelector('.modal-highscore');
     modalScore.textContent = points;
     modalHighscore.textContent = highscore;
-    modal.style.display = 'flex';
+    modal.style.display = 'block';
 }
 
 function resetGame() {

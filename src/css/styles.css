@@ -20,7 +20,6 @@ input[type=number] {
 @media screen and (max-width: 1024px){
     body {
         gap: 10vh;
-        margin-top: 20vh;
     }
 
     main {
@@ -64,22 +63,12 @@ body {
     justify-content: center;
     width: 100vw;
     gap: 10vh;
-    display: flex;
     flex-direction: column;
     font-family: 'Press Start 2P', sans-serif;
     color: #fff;
     background-color: rgb(0, 0, 0);
     height: 100vh;
-}
-
-.heart {
-    width: 64px;
-}
-
-.hearts {
-    display: flex;
-    gap: 5vw;
-    padding: 80px;
+    margin-top: 10vh;
 }
 
 header {
@@ -96,6 +85,16 @@ header {
 
 .between {
     font-size: 32px;
+}
+
+.heart {
+    width: 64px;
+}
+
+.hearts {
+    display: flex;
+    gap: 5vw;
+    padding: 80px;
 }
 
 main {
@@ -148,13 +147,15 @@ button:hover {
 
 .modal {
     display: none;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
+    top: 0;
+    height: 100%;
+    width: 100%;
     position: fixed;
-    backdrop-filter: blur(1px);
     background: rgba(0, 0, 0, 0.9);
+}
+
+.modal-title {
+    margin-top: 50vh;
 }
 
 .modal-content {
